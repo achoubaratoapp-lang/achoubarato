@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="Achou Barato reúne as melhores ofertas da internet em um só lugar." />
+<title>Achou Barato — Ofertas em um só lugar</title>
+
+<style>
+:raiz{
+--bg:#0b1020;
+--card:#111a33;
+--texto:#e9ecf5;
+--silenciado:#aab3d0;
+--accent:#6ee7ff;
+--accent2:#f97316;
+--ok:#34d399;
+--border:rgba(255,255,255,.12);
+--shadow:0 10px 30px rgba(0,0,0,.35);
+--raio:16px;
+--máx.:1100px;
+--font:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+}
+
+*{box-sizing:border-box}
+corpo{
+margem:0;
+família-fonte:var(--fonte);
+fundo:var(--bg);
+cor:var(--texto);
+}
+
+a{text-decoration:none;color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:24px}
+
+/* NAV */
+.nav{
+posição: aderente;
+topo:0;
+fundo:rgba(11,16,32,.85);
+fundo-filtro:desfoque(10px);
+border-bottom:1px var sólido(--border);
+índice z: 10;
+}
+.nav .wrap{
+exibição:flex;
+justify-content:space-between;
+alinhar-itens:centro;
+}
+.marca{
+exibição:flex;
+alinhar-itens:centro;
+espaço: 12px;
+}
+.logo-img{
+altura:38px;
+largura:automática;
+raio-da-borda:10px;
+box-shadow:var(--shadow);
+}
+.navlinks{
+exibição:flex;
+espaço: 14px;
+flex-wrap:wrap;
+}
+.navlinks a{
+cor:var(--muted);
+preenchimento: 8px 12px;
+raio-da-borda:12px;
+}
+.navlinks a:hover{
+fundo:rgba(255,255,255,.05);
+cor:var(--texto);
+}
+
+/* HERÓI */
+.herói{
+exibir:grade;
+grid-template-columns:1.2fr .8fr;
+espaço: 28px;
+preenchimento:60px 0;
+}
+@media(max-width:900px){
+.hero{grid-template-columns:1fr}
+}
+h1{
+tamanho da fonte: 44px;
+margem:10px 0;
+}
+.sub{
+cor:var(--muted);
+tamanho da fonte: 18px;
+largura-máxima:560px;
+}
+.cta{
+margem-superior:20px;
+exibição:flex;
+espaço: 12px;
+flex-wrap:wrap;
+alinhar-itens:centro;
+}
+.btn{
+preenchimento: 12px 18px;
+raio-da-borda:14px;
+borda: 1px var sólido (--borda);
+fundo:rgba(255,255,255,.04);
+peso da fonte: 700;
+}
+.btn.primary{
+plano de fundo: gradiente linear (135 graus, var (--accent), var (--accent2));
+cor: #061022;
+borda:nenhuma;
+}
+
+.cartão{
+fundo:rgba(17,26,51,.65);
+borda: 1px var sólido (--borda);
+raio-da-borda:var(--raio);
+preenchimento: 20px;
+box-shadow:var(--shadow);
+}
+
+seção{preenchimento:40px 0}
+.grid3{
+exibir:grade;
+grid-template-columns:repeat(3,1fr);
+espaço: 16px;
+}
+@media(max-width:900px){
+.grid3{grid-template-columns:1fr}
+}
+
+rodapé{
+border-top:1px var sólido(--border);
+preenchimento:30px 0;
+tamanho da fonte: 14px;
+cor:var(--muted);
+}
+rodapé a{color:var(--muted)}
+rodapé a:hover{color:var(--text)}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+<div class="wrap">
+<a class="brand" href="#">
+<img src="logo.png" alt="Achou Barato" class="logo-img">
+<strong>Achou Barato</strong>
+</a>
+<nav class="navlinks">
+<a href="#como">Como funciona</a>
+<a href="#beneficios">Benefícios</a>
+<a href="#contato">Contato</a>
+</nav>
+</div>
+</div>
+
+<!-- HERÓI -->
+<main class="wrap">
+<div class="hero">
+<div>
+<h1>As melhores ofertas da internet em um só lugar</h1>
+<p class="sub">
+O <strong>Achou Barato</strong> reúne promoções reais e atualizadas da Shopee,
+Amazon e parceiros confiáveis ​​para você economizar tempo e dinheiro.
+</p>
+<div class="cta">
+<a class="btn primário" href="#contato">Quero o link do app</a>
+<span class="sub">Suporte: achoubarato.app@gmail.com </span>
+</div>
+</div>
+
+<div class="card">
+<h3>Resumo rápido</h3>
+<ul>
+<li>🔥 Ofertas verificadas</li>
+<li>🔒 Compra sempre no site oficial</li>
+<li>⚡ Navegação rápida</li>
+<li>💰 Economia real</li>
+</ul>
+</div>
+</div>
+
+<!-- COMO FUNCIONA -->
+<section id="como">
+<h2>Como funciona</h2>
+<div class="grid3">
+<div class="card">
+<h3>1. Encontre</h3>
+<p>Selecionamos ofertas e tendências de produtos.</p>
+</div>
+<div class="card">
+<h3>2. Clique</h3>
+<p>Você escolhe uma oferta que mais vale a pena.</p>
+</div>
+<div class="card">
+<h3>3. Compre</h3>
+<p>Finalize uma compra no site oficial do parceiro.</p>
+</div>
+</div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section id="beneficios">
+<h2>Benefícios</h2>
+<div class="grid3">
+<div class="card">✔ Ofertas atualizadas diariamente</div>
+<div class="card">✔ Compra segura em marketplaces oficiais</div>
+<div class="card">✔ App simples, rápido e gratuito</div>
+</div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+<h2>Contato</h2>
+<div class="card">
+<p>
+Quer receber o link do aplicativo quando estiver disponível?
+Envie um e-mail para:
+</p>
+<p><strong> achoubarato.app@gmail.com </strong></p>
+</div>
+</section>
+</main>
+
+<!-- RODAPÉ -->
+<rodapé>
+<div class="wrap">
+<p>© 2026 Achou Barato — Todos os direitos reservados</p>
+<p>
+<a href="#">Política de Privacidade</a> •
+<a href="#">Termos de Uso</a>
+</p>
+</div>
+</footer>
+
+</body>
+</html>
